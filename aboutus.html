@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spendify: Budget Tracker</title>
+  <link rel=" stylesheet" href="spendi .css">
+  <script src="script.js" defer></script>
+  <script src="chart.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="dashboard-header">
+    <div class="logo-area">
+      <h1>💸 Spendify</h1> 
+      <p>A Simple Web-Based Budget Tracker</p>
+    </div>
+
+      <div class="db-header">
+      <a href="SPENDIFYpage.html" class="dashboard">DASHBOARD</a> 
+      <a href="achievements.html" class="analytics">ACHIEVEMENTS</a>
+      <a href = "subs.html" class = "subscriptionHD">SUBSCRIPTION</a>
+      <a href = "aboutus.html" class = "subscriptionHD">ABOUT US</a>
+      </div>
+    <div class="user-controls">
+      <button class="icon-button" id="notificationButton">🔔</button>
+      <button class="icon-button" id="settingsButton">⚙️</button>
+      <div class="profile">
+          <a href="userprof.html"><img src="https://i.pravatar.cc/40" alt="User Profile" /></a>
+      </div>
+      <div class="settings-dropdown" id="settingsDropdown">
+        <label for="currency">Select Currency:</label>
+        <select id="currency">
+          <option value="PHP">PHP</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+        <label for="spending-limit">Set Spending Limit:</label>
+        <input type="number" id="spending-limit" placeholder="Amount" />
+        <button id="set-limit">Set Limit</button>
+        <div class="alert" id="alert-settings" style="display: none;">
+          Alerts for billing dates and spending limits will be set.
+        </div>
+        <button id="set-alerts">Set Alerts</button>
+        <h4>Recurring Payments</h4>
+        <input type="text" id="recurring-description" placeholder="Description" />
+        <input type="number" id="recurring-amount" placeholder="Amount" />
+        <button id="add-recurring">Add Recurring Payment</button>
+        <ul id="recurring-list"></ul>
+
+        <button id="logoutButton">Logout</button>
+
+      </div>
+    </div>
+
+    
+  </header>
+
+  <main>
+    <section class="developer" id="acer">
+      <h2>Acer Montano</h2>
+      <div class="dev-profile">
+        <img src="acer.jpg" alt="Acer Montano" class="dev-photo" />
+        <p>Frontend developer and design specialist of Spendify. Acer helped build the interface for a smoother user experience.</p>
+      </div>
+    </section>
+
+    <section class="developer" id="kim">
+      <h2>Kim Taino</h2>
+      <div class="dev-profile">
+        <img src="kim.jfif" alt="Kim Taino" class="dev-photo" />
+        <p>Backend logic and JS functionality wizard. Kim implemented the interactive features and analytics components.</p>
+      </div>
+    </section>
+
+    <section class="developer" id="william">
+      <h2>William Esplana</h2>
+      <div class="dev-profile">
+        <img src="wilyam.jpg" alt="William Esplana" class="dev-photo" />
+        <p>Project leader and data structure manager. William ensured the system runs reliably with a focus on user budgeting features.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Spendify &copy; 2025 | Developed by Acer, Kim, and William</p>
+  </footer>
+
+  <!-- ========== HTML END ========== -->
+
+  <!-- ========== JAVASCRIPT START ========== -->
+  <script>
+    
+
+    console.log("About Us page loaded successfully.");
+
+  </script>
+  <!-- ========== JAVASCRIPT END ========== -->
+
+</body>
+</html>
